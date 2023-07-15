@@ -316,7 +316,7 @@ body.projet1-on .hero-section {
   line-height: 30px;
   font-weight: 700;
   top: 50%;
-  left: 40px;
+  left: 35px;
   cursor: pointer;
   z-index: 2;
   -webkit-writing-mode: vertical-lr;
@@ -408,7 +408,7 @@ body.about-on .about-section {
   line-height: 30px;
   font-weight: 700;
   top: 50%;
-  right: 40px;
+  right: 30px;
   cursor: pointer;
   z-index: 2;
   -webkit-writing-mode: vertical-lr;
