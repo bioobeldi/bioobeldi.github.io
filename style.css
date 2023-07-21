@@ -316,6 +316,37 @@ nav li:hover {
   transition: background-color 0.5s ease;
 }
 
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Style d'une image spécifique avec un dégradé */
+.image-degrade {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background: linear-gradient(to right, var(--degrade-debut), var(--degrade-fin));
+  display: inline-block;
+  padding: 5px;
+}
+
+.image-degrade img {
+  display: block;
+  border-radius: 5px;
+}
+
+.image-degrade:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   #icons {
     opacity: 1;
