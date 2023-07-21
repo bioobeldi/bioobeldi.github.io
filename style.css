@@ -338,10 +338,11 @@ img:hover {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  background: linear-gradient(to right, var(--degrade-debut), var(--degrade-fin));
+  background: linear-gradient(to right, #d5b01c, #628a2b);
   display: inline-block;
   padding: 5px;
 }
+
 
 .image-degrade img {
   display: block;
