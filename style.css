@@ -16,9 +16,9 @@
   border-radius: 50%;
 }
 
-#li1 a::after,
-#li2 a::after,
-#li3 a::after :hover::after {
+#li1 a:hover::after,
+#li2 a:hover::after,
+#li3 a:hover::after {
   animation: animLink 1.4s infinite ease-in-out;
 }
 @keyframes animLink {
