@@ -97,8 +97,8 @@ h1 {
 }
 
 form {
-  max-width: 500px;
-  min-width: 40vw;
+  width: 80%;
+  max-width: 400px; /* Limite la largeur maximale du formulaire pour les grands écrans */
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
