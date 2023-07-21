@@ -1,9 +1,11 @@
 
-.bvn {
+.bvn {        /* la section ppal*/
   margin: 150px 0 150px;
 }
 
-a::after {
+#li1 a::after,
+#li2 a::after,
+#li3 a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -14,7 +16,9 @@ a::after {
   border-radius: 50%;
 }
 
-a:hover::after {
+#li1 a::after,
+#li2 a::after,
+#li3 a::after :hover::after {
   animation: animLink 1.4s infinite ease-in-out;
 }
 @keyframes animLink {
