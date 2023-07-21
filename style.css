@@ -1,12 +1,24 @@
+
+p {
+  width: 70%;
+  min-width: 280px;
+  text-align: left;
+  margin: 0 auto 100 auto;
+  line-height: calc(7px + 4.5vw);
+  font-size: calc(1rem + 1vw);
+}
 .produit {
-  display : flex;
+  display: flex;
   align-items: center;
 }
+
 .produit img {
   width: 90vw;
 }
-.bvn {        /* la section ppal*/
-  margin: 150px 0 150px;
+
+.bvn {
+  /* la section ppal */
+  margin: 250px 0 250px;
 }
 
 #li1 a::after,
@@ -27,6 +39,7 @@
 #li3 a:hover::after {
   animation: animLink 1.4s infinite ease-in-out;
 }
+
 @keyframes animLink {
   50% {
     transform: scaleX(0.2);
@@ -35,11 +48,13 @@
     transform: scaleX(1);
   }
 }
+
 a#wtsp::after {
   content: none;
 }
+
 .logo a::after {
-content: none;
+  content: none;
 }
 
 * {
@@ -47,23 +62,24 @@ content: none;
   margin: 0;
   font-family: "Segoe UI";
 }
+
 *::selection {
-    background: #000101;
-    color: #fefeff; 
+  background: #000101;
+  color: #fefeff;
 }
+
 body {
   display: block;
   background-color: #f2eded;
   margin: 0;
   padding: 0;
 }
+
 h1 {
-  max-width: 500px;
-  min-width:40vw;
-  margin: 0 auto;
+  margin: 0 0 100 0;
   padding: 20px;
   text-align: center;
-  font-size: calc(1em+10vw);
+  font-size: calc(1rem + 3vw);
   color: #4f692a;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   animation: shine 2s infinite alternate;
@@ -73,13 +89,13 @@ h1 {
   0% {
   }
   100% {
-      color: #d5b01c;
+    color: #d5b01c;
   }
 }
 
 form {
   max-width: 500px;
-  min-width:40vw;
+  min-width: 40vw;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
@@ -100,9 +116,9 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-sizing: border-box;
-  resize: vertical; /* Permet de redimensionner la zone de texte verticalement */
+  resize: vertical;
+  /* Permet de redimensionner la zone de texte verticalement */
 }
-
 
 input[type="email"],
 textarea {
@@ -111,7 +127,8 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-sizing: border-box;
-  resize: vertical; /* Permet de redimensionner la zone de texte verticalement */
+  resize: vertical;
+  /* Permet de redimensionner la zone de texte verticalement */
 }
 
 textarea {
@@ -133,29 +150,32 @@ button[type="submit"]:hover {
   transform: scale(1.1);
 }
 
-
 li {
   list-style: none;
 }
+
 li {
   display: inline-block;
   background: #5d812b;
   padding: 0 0 2px 0;
-  border-radius: 4px; /* Ajustez le rayon de bordure pour arrondir les coins */
+  border-radius: 20px;
+  /* Ajustez le rayon de bordure pour arrondir les coins */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
+
 li:hover {
   transform: scale(1.1);
 }
+
 a,
 a:visited {
   color: #f6f5f2;
   text-decoration: none;
   text-transform: uppercase;
 }
-li a {
-  padding: 4px 20px 4px 20px;
-}
+
+
 a:hover {
   color: #0c0c0c;
 }
@@ -163,80 +183,71 @@ a:hover {
 #btn-wtsp {
   display: inline-block;
   background: #f2eded;
-  }
-#btn-wtsp a {
+}
 
+#btn-wtsp a {
   position: relative;
   top: 0;
   left: 0;
 }
+
 #btn-wtsp:hover {
   transform: scale(1.1);
 }
 
 #wtsp {
   padding: 0 15px 0 15px;
-  color:#0c0c0c;
-  display: inline-flex; /* Affiche les éléments en ligne (horizontalement) */
-  align-items: center; /* Aligne verticalement les éléments sur l'axe du conteneur */
-  text-decoration: none; /* Supprime le soulignement du texte (si présent) */
+  color: #0c0c0c;
+  display: inline-flex;
+  /* Affiche les éléments en ligne (horizontalement) */
+  align-items: center;
+  /* Aligne verticalement les éléments sur l'axe du conteneur */
+  text-decoration: none;
+  /* Supprime le soulignement du texte (si présent) */
 }
 
 /* Style pour l'image */
 #wtsp img {
-  width: 20px; 
-  height: 20px;
-  margin-right: 5px; /* Espacement entre l'image et le texte */
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  /* Espacement entre l'image et le texte */
   padding: 0 0 0 10px;
 }
 
-#p-bvn {
-  width: 70%;
-  min-width: 280px;
-  text-align: center;
-  margin: 0 auto;
-  line-height: calc(7px+4.5vw);
-  font-size: calc(1rem+1vw);
-
-}
 
 
 nav {
   z-index: 999;
   background: #4f692a;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  font-size: calc(0.5rem+1.5vw);
+  font-size: calc(0.5rem + 1.5vw);
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
 }
+
 nav ul {
   display: flex;
   justify-content: space-between;
   width: 70%;
   padding-right: 10vw;
 }
-nav li a {
 
-  padding-left: 15px;
-  padding-right: 15px;
 
+li a {
+  padding: 4px 20px 4px 20px;
 }
 
-nav li {
-  border-radius: 4px;
-  transition: transform 0.2s ease-in-out;
-
-  
-}
 nav li:hover {
   background: #628a2b;
 }
+
 #icons {
   cursor: pointer;
   opacity: 0;
@@ -257,18 +268,17 @@ nav li:hover {
   font-size: 14px;
 }
 
-
-
 .logo {
   width: 20vw;
   text-align: center;
   z-index: 99999999;
 }
+
 .logo img {
-  max-width: 50px;
+  width: 70px;
   /* Ajustez la taille maximale selon vos besoins */
-  height: auto;
-  border-radius: 50%;
+  width: 70px;
+  border-radius: 20%;
   /* Arrondir les coins */
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
   transition: transform 0.2s ease-in-out;
@@ -280,6 +290,7 @@ nav li:hover {
 .logo img:hover {
   transform: scale(1.1);
 }
+
 .container-blanc {
   width: 100%;
   justify-content: center;
@@ -287,27 +298,20 @@ nav li:hover {
   background-color: #f2eded;
   transition: background-color 0.5s ease;
 }
+
 .lang-switcher select {
- 
   padding-bottom: 6px;
   padding-left: 2px;
 }
+
 .container-vert {
   align-items: center;
   position: relative;
   background-color: #4f692a;
   transition: background-color 0.5s ease;
-  }
-.content {
-  position:relative;
-  width: 60vw;
-  max-width: 600px;
 }
 
-.content img {
-  width: 100%;
-  transition: 0.6s ease-in-out;
-}
+
 
 .container-noir {
   width: 100%;
@@ -354,26 +358,24 @@ img:hover {
     padding-right: 5vw;
     z-index: 9999999;
   }
-  .content {
-    width: 100%;
-  }
+
 
   #icons:before {
     content: "\2632";
     fill: #000000;
     font-size: 2.5em;
-    padding-right: 5 vw;
+    padding-right: 5vw;
   }
   .active #icons:before {
     content: "\2715";
     fill: #ffffff;
     font-size: 2.5em;
-    padding-right: 5 vw;
+    padding-right: 5vw;
   }
   nav ul {
     position: fixed;
     left: -150%;
-    top:5%;
+    top: 5%;
     flex-direction: column;
     background: #4f692a;
     width: 100%;
@@ -387,13 +389,18 @@ img:hover {
   nav li:hover {
     background: #628a2b;
   }
-    nav.active ul {
-    left:0;
+  nav.active ul {
+    left: 0;
   }
   nav.active li a {
-
     padding-left: 30vw;
-    padding-right:30vw;
+    padding-right: 30vw;
     box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
   }
+
+
+  li a::after {
+    content: none;
+  }
+
 }
