@@ -41,9 +41,9 @@ p {
   margin-bottom: calc(8vw + 4vh);
 }
 
-#li1 a::after,
-#li2 a::after,
-#li3 a::after {
+#li1 a:hover::after,
+#li2 a:hover::after,
+#li3 a:hover::after {
   content: "";
   position: absolute;
   left: 0;
@@ -52,11 +52,6 @@ p {
   height: 4px;
   bottom: -10px;
   border-radius: 50%;
-}
-
-#li1 a:hover::after,
-#li2 a:hover::after,
-#li3 a:hover::after {
   animation: animLink 1.4s infinite ease-in-out;
 }
 
