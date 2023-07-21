@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 p {
   width: 70%;
   min-width: 280px;
