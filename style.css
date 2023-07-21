@@ -1,4 +1,10 @@
-
+.produit {
+  display : flex;
+  align-items: center;
+}
+.produit img {
+  width: 90vw;
+}
 .bvn {        /* la section ppal*/
   margin: 150px 0 150px;
 }
