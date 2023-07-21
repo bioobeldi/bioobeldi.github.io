@@ -17,7 +17,7 @@ p {
 }
 
 .produit-container { 
-  margin: 100px 0;
+  margin-top: calc(8vw + 4vh);
 }
 .produit {
   position: relative;
@@ -318,27 +318,40 @@ nav li:hover {
   font-size: 14px;
 }
 
+/* Style d'une image spécifique avec un dégradé */
 .logo {
-  width: 8vw;
-  text-align: center;
+  position: relative;
+  width: calc(5vw + 5vh);
+  height: calc(5vw + 5vh);
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background: linear-gradient(to right, #d5b01c, #628a2b);
+
   z-index: 99999999;
 }
 
-.logo img {
+.logo:hover {
+  transform: scale(1.1);
+}
 
-  width: calc(8vw-10px);
-  border-radius: 130px;
-  /* Arrondir les coins */
+.logo img {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: calc(4vw + 4vh);
+  height: calc(4vw + 4vh);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
-  border: 4px groove #f2ededd3;
-  margin: 10px;
+  margin: calc(0.5vh + 0.5vw);
 }
 
-.logo img:hover {
-  transform: scale(1.1);
-}
+
+
 
 .container-blanc {
   width: 100%;
@@ -351,6 +364,8 @@ nav li:hover {
 .lang-switcher select {
   padding-bottom: 6px;
   padding-left: 2px;
+  font-size: calc(0.3rem + 1vw);
+
 }
 
 .container-vert {
@@ -376,36 +391,20 @@ img {
   transition: transform 0.3s ease;
 }
 
-img:hover {
+                       /* la classe img pas la balise !  */
+.img:hover {
   transform: scale(1.1);
 }
 
-/* Style d'une image spécifique avec un dégradé */
-.image-degrade {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  background: linear-gradient(to right, #d5b01c, #628a2b);
-  display: inline-block;
-  padding: 5px;
-}
 
-
-.image-degrade img {
-  display: block;
-  border-radius: 5px;
-}
-
-.image-degrade:hover {
-  transform: scale(1.1);
-}
 
 @media (max-width: 768px) {
   #icons {
     opacity: 1;
     visibility: visible;
     padding-right: 5vw;
+    margin-top: 10px;
+
     z-index: 9999999;
   }
 
