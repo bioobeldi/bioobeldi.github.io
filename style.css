@@ -134,16 +134,16 @@ h1 {
   padding: 20px;
   text-align: center;
   font-size: calc(1rem + 3vw);
-  color: #7d6813;
+  color: #4f692a;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  animation: shine 20s infinite alternate;
+  animation: shine 13s infinite alternate;
 }
 
 @keyframes shine {
   0% {
   }
   100% {
-    color: #4f692a;
+    color: #7d6813;
   }
 }
 
