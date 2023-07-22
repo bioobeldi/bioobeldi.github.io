@@ -310,7 +310,7 @@ nav li:hover {
 
 .lang-switcher {
   position: fixed;
-  top: 10px;
+  top: 3px;
   right: 5px;
   margin-bottom: 10px;
   z-index: 10000;
