@@ -30,7 +30,7 @@ p {
   position: relative;
   margin: 0 5vw 10vw 5vw;
   width: 90vw;
-  max-width: 800px;
+  max-width: 700px;
   transition: 0.4s ease-in;
 }
 .produit-infos {
