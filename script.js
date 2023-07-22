@@ -11,6 +11,7 @@ links.forEach((link) => {
 });
 const translations = {
   en: {
+    "spanwtsp": "whatsapp me",
     "arganp": "Seasonal Argan Oil Morocco Souss",
     "argana": "Unique and millennial pure Argan oil",
     "zitouna": "Best traditionally pressed olive oil from Morocco Agadir",
@@ -35,6 +36,7 @@ const translations = {
     "placeholder-message": "Example: I want 1 liter of Argan oil and 1kg of Amlou to be delivered to Agadir.",
   },
   fr: {
+    "spanwtsp": "whatsapp",
     "arganp": "Huile d'Argan de saison Maroc Souss",
     "argana": "Huile d'Argan pure unique et millénaire",
     "zitouna": "Meilleure huile d'olive pressées traditionnellement Région Souss Maroc",
@@ -59,6 +61,7 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
+    "spanwtsp": "واتساب",
     "arganp": "زيت أرڭان موسمية",
     "argana": "زيت أرڭان صافية و حرة",
     "zitouna": "أفضل زيوت زيتون معصورة تقليديا  في سوس",
