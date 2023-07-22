@@ -136,7 +136,7 @@ h1 {
   font-size: calc(1rem + 3vw);
   color: #8f7613;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  animation: shine 2s infinite alternate;
+  animation: shine 20s infinite alternate;
 }
 
 @keyframes shine {
