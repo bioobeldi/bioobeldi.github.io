@@ -31,7 +31,7 @@ p {
   margin-left: 8vw;
 }
 .produit img {
-
+  max-width: 100%;
 }
 
 
@@ -161,38 +161,10 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-
-
-
-
 button[type="submit"]:hover {
   background-color: #5d812b;
   transform: scale(1.1);
 }
-.img-bvn-wrapper{
-  width: 80vw;
-  align-items: center;
-}
-.img.imgbvn {
-  position: relative;
-  width: 500px;
-  height: 400px;
-  background-image: url('/img/olive-oil.jpg');
-  background-size: cover/center;
-  /* Autres styles pour l'élément avec l'image de fond */
-}
-
-.img.imgbvn p {
-  /* Styles pour le texte alternatif */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  color: transparent; /* Pour cacher le texte du flux de la page, mais toujours le rendre accessible */
-}
-
 
 li {
   list-style: none;
@@ -343,6 +315,8 @@ nav li:hover {
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
   margin: calc(0.5vh + 0.5vw);
+  border-radius: 5%px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -377,13 +351,6 @@ nav li:hover {
   height: 40vh;
   background-color: #060704;
   transition: background-color 0.5s ease;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
 }
 
                        /* la classe img pas la balise !  */
