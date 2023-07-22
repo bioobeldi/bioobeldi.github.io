@@ -8,7 +8,7 @@ body, h1, p, img {
 }
 
 p {
-  width: 90vw;
+  width: 100%;
   min-width: 280px;
   max-width: 800px;
   text-align: left;
