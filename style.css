@@ -413,7 +413,7 @@ nav li:hover {
   .active #icons:before {
     content: "\2715";
     fill: #ffffff;
-    font-size: 1.9em;
+    font-size: 1.5em;
     padding-right: 5vw;
   }
   nav ul {
@@ -434,15 +434,18 @@ nav li:hover {
     background: #628a2b;
   }
   nav.active ul {
+    position : absolute;
+    
     margin-top: calc(2vw + 1vh) ;;
-    left: 0;
+    left: -10vw;
+    top: 5vh;
   }
   nav.active li {
     position: relative;
     width: calc(20vw + 20vh) ;
     height: calc(3vw + 1vh) ;
-    margin-left: calc(8vw + 8vh);
-    margin-right:calc(8vw + 8vh);
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: calc(2vw + 1vh) ;
     margin-top: calc(2vw + 1vh) ;
   }
@@ -460,7 +463,6 @@ nav li:hover {
     transition: transform 0.2s ease-in-out;
   }
 #prdt1 {
-
 }
   nav.active li a#wtsp {
     position: absolute;
@@ -475,9 +477,7 @@ nav li:hover {
     width: calc(3vw + 2vh) ;
     height: calc(3vw + 2vh) ;
   }
-
   li a::after {
     content: none;
   }
-
 }
