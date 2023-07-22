@@ -11,6 +11,10 @@ links.forEach((link) => {
 });
 const translations = {
   en: {
+    "arganp": "Seasonal Argan Oil Morocco Souss",
+    "argana": "Unique and millennial pure Argan oil",
+    "zitouna": "Best traditionally pressed olive oil from Morocco Agadir",
+    "zitounp": "Souss Aourir Olive Oil",
     "amloup": "Ingredients: Argan Oil Roasted Almonds and Honey",
     "amloua": "Best traditional Amlou spread",
     "p2": "Carefully pressed from ripe olives, this precious oil is packed with antioxidants and essential fatty acids to pamper your body inside and out. From refined cuisine to your beauty ritual, our olive oil promises an incomparable and cosmetic experience. A true Moroccan treasure, argan oil is a beauty secret handed down from generation to generation. Hand-extracted from the fruit of the this rich, luxurious oil is renowned for its moisturizing, regenerating and anti-aging properties. Treat your skin and hair to with our pure, authentic argan oil. A true elixir that transports you to the heart of Morocco's of Morocco",
@@ -31,6 +35,10 @@ const translations = {
     "placeholder-message": "Example: I want 1 liter of Argan oil and 1kg of Amlou to be delivered to Agadir.",
   },
   fr: {
+    "arganp": "Huile d'Argan de saison Maroc Souss",
+    "argana": "Huile d'Argan pure unique et millénaire",
+    "zitouna": "Meilleure huile d'olive pressées traditionnellement Région Souss Maroc",
+    "zitounp": "Huile d'Olive Souss Aourir",
     "amloup": "Ingrédients : Huile d'Argan Amandes Grillés et Miel",
     "amloua": "Meilleur Amlou traditionnel à tartiner",
     "p2": "Pressée avec soin à partir d'olives mûres à souhait, cette précieuse huile regorge d'antioxydants et d'acides gras essentiels pour choyer votre corps de l'intérieur comme de l'extérieur. De la cuisine raffinée à votre rituel beauté, notre huile d'olive promet une expérience gustative et cosmétique incomparable. Véritable trésor marocain, l'huile d'argan est un secret de beauté transmis de génération en génération. Extraite à la main des fruits de l'arganier, cette huile riche et luxueuse est réputée pour ses propriétés hydratantes, régénérantes et anti-âge. Offrez à votre peau et à vos cheveux le meilleur de la nature avec notre huile d'argan pure et authentique. Un véritable élixir qui vous transporte au cœur des paysages envoûtants du Maroc",
@@ -51,6 +59,10 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
+    "arganp": "زيت أرڭان موسمية",
+    "argana": "زيت أرڭان صافية و حرة",
+    "zitouna": "أفضل زيوت زيتون معصورة تقليديا  في سوس",
+    "zitounp": "زيت زيتون سوس أورير",
     "amloup": "زيت الأركان واللوز المحمص والعسل",
     "amloua": "أملو تقليدي بأفضل المكونات",
     "p2": "يتم عصر هذا الزيت الثمين بعناية من الزيتون الناضج تمامًا ، وهو مليء بمضادات الأكسدة والأحماض الدهنية الأساسية لأجسامنا، سواء للظاهر أو للباطن. من المأكولات الفاخرة إلى طقوس الجمال الخاصة بك ، يعدك زيت الزيتون لدينا بمذاق لا مثيل له وتجربة تجميلية. كنز مغربي حقيقي ، زيت الأرڭان هو سر جمال ينتقل من جيل إلى جيل. يتم استخلاصه يدويًا من ثمار شجرة الأرڭان ، ويشتهر هذا الزيت الغني والفاخر بخصائصه المرطبة والتجديد ومقاومة الشيخوخة. عالجي بشرتك وشعرك بأفضل ما في الطبيعة بزيت الأرڭان النقي والأصلي. إكسير حقيقي ينقلك إلى قلب المناظر الطبيعية الساحرة في المغرب",
