@@ -134,7 +134,7 @@ h1 {
   padding: 20px;
   text-align: center;
   font-size: calc(1rem + 3vw);
-  color: #8f7613;
+  color: #7d6813;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   animation: shine 20s infinite alternate;
 }
@@ -143,7 +143,7 @@ h1 {
   0% {
   }
   100% {
-    color: #2ab00c;
+    color: #4f692a;
   }
 }
 
