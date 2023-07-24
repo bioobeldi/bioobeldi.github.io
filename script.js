@@ -12,7 +12,7 @@ links.forEach((link) => {
 const translations = {
   en: {
     "adr": "Abderrahim Bouabid avenue",
-    "ville": "",
+    "ville": "Agadir - Morocco",
     "msgSM": "Share your experience with us and our products. Your feedback helps us improve. Do not hesitate to leave a testimonial, a suggestion or a constructive criticism, and leave us a like on our facebook and instagram pages",
     "spanwtsp": "whatsapp me",
     "arganp": "Seasonal Argan Oil Morocco Souss",
