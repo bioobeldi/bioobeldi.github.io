@@ -16,6 +16,13 @@ p {
   font-size: calc(1rem + 1vw);
 }
 
+.msg p,
+.bvn p {
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in;
+}
+
 /* section ppale produits  */
 .bvn {
   /* la section ppal */
@@ -60,10 +67,12 @@ p {
 }
 .produit-infos p {
 /*  font-size: calc(); */
+all: unset;
   position: absolute;
   transition: 0.4s ease-out;
   color: #fefeff;
   font-size: calc(0.5rem + 0.5vw + 0.5vh);
+  left: 0;
   top: calc(10vw + 9vh);
 }
 #p2 {
