@@ -11,6 +11,7 @@ links.forEach((link) => {
 });
 const translations = {
   en: {
+    "legal": "BioBeldi, All right reserved 2023 ",
     "adr": "Abderrahim Bouabid avenue",
     "ville": "Agadir - Morocco",
     "msgSM": "Share your experience with us and our products. Your feedback helps us improve. Do not hesitate to leave a testimonial, a suggestion or a constructive criticism, and leave us a like on our facebook and instagram pages",
@@ -39,9 +40,10 @@ const translations = {
     "placeholder-message": "Example: I want 1 liter of Argan oil and 1kg of Amlou to be delivered to Agadir.",
   },
   fr: {
-    "adr": "",
-    "ville": "",
-    "msgSM": "",
+    "legal": "© 2023 BioBeldi. Tous droits réservés.",
+    "adr": "Avenue Abderrahim Bouabid",
+    "ville": "Agadir - Maroc",
+    "msgSM": " Partagez votre expérience avec nous et nos produits. Vos commentaires nous aident à nous améliorer. N'hésitez pas à laisser un témoignage, une suggestion ou une critique constructive, et nous laisser un like sur nos pages facebook et instagram",
     "spanwtsp": "whatsapp",
     "arganp": "Huile d'Argan de saison Maroc Souss",
     "argana": "Huile d'Argan pure unique et millénaire",
@@ -67,6 +69,7 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
+    "legal": " بيو بيلدي، جميع الحقوق محفوظة 2023 ©",
     "adr": "شارع عبد الرحيم بوعبيد",
     "ville": "أڭادير، المغرب",
     "msgSM": "شارك تجربتك معنا ومع منتجاتنا، لا تتردد في ترك شهادة أو اقتراح أو نقد بنّاء ، واترك لنا إعجابًا على صفحتنا على فيسبوك وإنستجرام ",
