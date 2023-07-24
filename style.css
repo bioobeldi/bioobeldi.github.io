@@ -455,7 +455,7 @@ footer .social-icons a {
 }
 /* Adresse et informations de contact dans le footer */
 footer .contact-info {
-  margin-top: calc(1vh + 1vw);
+  margin-top: calc(1rem + 2vh + 2vw);
   display: flex;
   flex-direction: row;
   width: 95vw;
