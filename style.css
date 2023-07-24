@@ -516,7 +516,7 @@ footer .newsletter-form {
   margin-top: calc(6vh + 6vw);
   margin-bottom: calc(5vh + 5vw);
   line-height: calc(0.6em + 0.81vw + 0.81vh);
-  font-size: calc(0.8rem + 0.8vw);
+  font-size: calc(0.4rem + 0.4vw);
 }
 #nsletter {
   margin-top:calc(2vh + 2vw); ;
