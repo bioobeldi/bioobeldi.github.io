@@ -58,7 +58,18 @@
     
     <div class="container-noir">
       <h1 id="h1formulaire">Passer une commande</h1>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd05V8HMXnjAORRR32aM-ueBTBvcSK3DUUgxxWcefTq5h1CGg/viewform?embedded=true" width="640" height="643" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+      <form action="https://formspree.io/f/xvojgkyv" method="POST">
+          <label for="phone"><span id="label-phone">Téléphone:</span></label>
+          <input type="phone" id="phone" name="phone" placeholder="Entrez votre numéro mobile" />
+      
+          <label for="email"><span id="label-email">Email:</span></label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" />
+      
+          <label for="message"><span id="label-message">Message:</span></label>
+          <textarea id="message" name="message" placeholder="Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir"></textarea>
+      
+          <button type="submit"><span id="label-submit">Envoyer</span></button>
+      </form>
    </div>
  
     <footer>
