@@ -1,0 +1,132 @@
+<html>
+
+<head>
+ <meta charset="utf-8" />
+ <meta name='robots' content='index, follow'/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="style.css" />
+
+ <title>Huile d'olive traditionnel - paiement à la livraison</title>  
+</head>
+
+<body>
+    <div class="lang-switcher">
+        <select id="lang-select" onchange="changeLanguage()">
+          <option value="fr" selected>Français</option>
+          <option value="en">English</option>
+          <option value="ar">عربي</option>
+        </select>
+    </div>
+
+
+    <nav id="nav">
+      <div class="logo">
+        <a href="index.html"><img src="img/fond.jpg" alt="Logo"></a>
+      </div>
+      <ul id="product-list">
+          <li><a href="zit-zitoun.html" id="product-olive-oil">huile d'olive</a></li>
+          <li><a href="zit-argan.html" id="product-argan-oil">huile d'argan</a></li>
+          <li><a href="amlou.html" id="product-amlou">amlou</a></li>
+          <li id="btn-wtsp">
+            <a id="wtsp" aria-label="WhatsApp" href="https://wa.me/212661145233">
+              <img alt="WhatsApp" src="img/whatsapp.svg" /><span>WhatsApp</span>
+            </a>
+          </li>
+      </ul>
+      <div id="icons">
+        <!-- rien afficher ou les icones menu et fermer : géré par css et js-->
+      </div>
+    </nav>
+
+    <section class="bvn">
+      <div class="h1-wrapper">
+          <h1 id="h1olive">Huile d'Olive traditionnelle</h1>
+      </div>
+  <p id="p-bvn">            
+          Découvrez le secret ancestral de la beauté et du bien-être avec notre sélection exquise d'huiles d'olive et d'argan. Plongez dans une expérience 
+   sensorielle inoubliable, où tradition et qualité se rencontrent pour sublimer votre vie quotidienne.
+        
+          
+          Appréciée depuis des millénaires pour ses bienfaits nourrissants et ses saveurs délicates, notre huile d'olive extra vierge provient des terres 
+   ensoleillées de la région de Souss au centre du Maroc, qui englobe une grande partie de la vallée du fleuve du même nom, le fleuve Souss, et qui longe
+   l'océan lui ajoutant une fraîcheur climatique. Toutes ces conditions font que la région est l'une des plus agricoles du pays. Nos huiles viennent plus
+   exactement de Aourir, réputé pour ses vastes exploitations agricoles de plantations diverses et variées grâce au climat favorable qui règne.
+  </p>
+
+    </section>
+    
+    <div class="container-noir">
+      <h1 id="h1formulaire">Passer une commande</h1>
+      <form action="https://formspree.io/f/xvojgkyv" method="POST">
+          <label for="phone"><span id="label-phone">Téléphone:</span></label>
+          <input type="phone" id="phone" name="phone" placeholder="Entrez votre numéro mobile" />
+      
+          <label for="email"><span id="label-email">Email:</span></label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" />
+      
+          <label for="message"><span id="label-message">Message:</span></label>
+          <textarea id="message" name="message" placeholder="Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir"></textarea>
+      
+          <button type="submit"><span id="label-submit">Envoyer</span></button>
+      </form>
+    </div>
+ 
+  
+ 
+    <footer>
+      <div class="container">
+        <div class="msg">
+          <p id="msgSM">
+            Partagez votre expérience avec nous et nos produits. Vos commentaires nous aident à nous améliorer. N'hésitez pas à laisser un témoignage, une suggestion ou une critique constructive, et nous laisser un like sur nos pages facebook et instagram
+          </p>
+        </div>
+        <div class="social-icons">
+
+        <a id="afb" href="lien like fb" target="'_blank"  >
+          <img alt="page facebook" src="img/fb.svg" />
+        </a>
+
+        <a id="ainsta" href="lien suivre insta" target="'_blank"  >
+          <img alt="instagram" src="img/insta.svg" />
+        </a>
+
+        <a id="amess" href="lien messenger" target="'_blank"  >
+          <img alt="snapchat" src="img/messenger.svg" />
+        </a>
+
+      </div>
+        <div class="contact-info">
+          <p>123, Rue rue ueuru eur reu</p>
+          <p>Agadir - Maroc</p>
+          <p>+212 123 456 789</p>
+          <p>bioobeldi@gmail.com</p>
+        </div>
+ 
+        <div class="newsletter-form">
+                <!-- 
+          <p>Inscrivez-vous à notre newsletter</p>
+          <form id="nsletter" action="#" method="post">
+            <input type="email" name="email" placeholder="Votre adresse email" required>
+            <button type="submit">S'inscrire</button>
+          </form>
+          -->
+          <div class="legal">
+            <p>
+              © 2023 BioBeldi. Tous droits réservés.
+            </p>
+          </div>
+        
+        </div>
+
+      </div>
+    </footer>
+    
+
+  <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
