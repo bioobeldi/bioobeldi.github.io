@@ -138,22 +138,29 @@ if (storedLang) {
 
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage();
-
-
-// Récupérer la barre de navigation
+// navbarre au défilement
 const navbar = document.getElementById('nav');
 let prevScrollPos = window.pageYOffset;
+let isNavbarHidden = false;
 
-// Fonction pour détecter le sens du défilement et afficher/cacher la barre de navigation
 function handleScroll() {
   const currentScrollPos = window.pageYOffset;
+
   if (prevScrollPos > currentScrollPos) {
-    navbar.classList.add('hiddennav');
+    // Défilement vers le haut, afficher la barre de navigation
+    if (isNavbarHidden) {
+      navbar.style.transform = 'translateY(0)';
+      isNavbarHidden = false;
+    }
   } else {
-    navbar.classList.remove('hiddennav');
+    // Défilement vers le bas, masquer la barre de navigation en mode fixe
+    if (!isNavbarHidden) {
+      navbar.style.transform = 'translateY(-100%)';
+      isNavbarHidden = true;
+    }
   }
+
   prevScrollPos = currentScrollPos;
 }
 
-// Ajouter un écouteur d'événement pour le défilement
 window.addEventListener('scroll', handleScroll);
