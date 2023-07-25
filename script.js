@@ -140,7 +140,7 @@ if (storedLang) {
 changeLanguage();
 
 // navbarre au défilement
-const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('nav');
 let prevScrollPos = window.pageYOffset;
 let isNavbarHidden = false;
 const threshold = 100; // Seuil de défilement en pixels
