@@ -158,7 +158,7 @@ function handleScroll() {
     // Défilement vers le bas, masquer la barre de navigation en mode fixe
     if (!isNavbarHidden) {
       navbar.style.transform = 'translateY(-110%)';
-      langselect.style.transform = 'translateY(-110%)';
+      langselect.style.transform = 'translateY(-100vh)';
       isNavbarHidden = true;
     }
   }
