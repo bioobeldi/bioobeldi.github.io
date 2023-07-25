@@ -534,7 +534,6 @@ footer .newsletter-form {
     z-index: 9999999;
   }
 
-
   #icons:before {
     content: "\2632";
     fill: #000000;
@@ -548,15 +547,18 @@ footer .newsletter-form {
     padding-right: 5vw;
   }
   nav ul {
+    z-index: 1;
     position: fixed;
-    left: -150%;
-    top: 5%;
+    left: -5vw;  
+    top: -20vh;
     flex-direction: column;
     background: #4f692a;
     width: 100%;
     text-align: center;
     transition: 0.25s;
     padding-bottom: 30px;
+    transform: scaleY(0.05);
+    transition: 0.4s ease-out;
   }
   nav li {
     padding: 10px 10px;
@@ -567,8 +569,10 @@ footer .newsletter-form {
   nav.active ul {
     position : absolute;
     margin-top: calc(2vw + 1vh);
-    left: -10vw;
+    left: -5vw;
     top: 5vh;
+    transition: 0.4s ease-in;
+    transform: scaleY(1);
   }
   nav.active li {
     position: relative;
