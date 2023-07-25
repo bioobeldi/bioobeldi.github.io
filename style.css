@@ -549,7 +549,7 @@ footer .newsletter-form {
   }
   nav ul {
     position: fixed;
-    left: 15vw;
+    left: -150%;
     top: 5%;
     flex-direction: column;
     background: #4f692a;
