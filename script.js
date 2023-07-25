@@ -138,3 +138,30 @@ if (storedLang) {
 
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage(); 
+
+
+const navbar = document.getElementById('nav');
+let prevScrollPos = window.pageYOffset;
+let isNavbarHidden = false;
+
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    // Défilement vers le haut, afficher la barre de navigation
+    if (isNavbarHidden) {
+      navbar.style.transform = 'translateY(0)';
+      isNavbarHidden = false;
+    }
+  } else {
+    // Défilement vers le bas, masquer la barre de navigation en mode fixe
+    if (!isNavbarHidden) {
+      navbar.style.transform = 'translateY(-100%)';
+      isNavbarHidden = true;
+    }
+  }
+
+  prevScrollPos = currentScrollPos;
+}
+
+window.addEventListener('scroll', handleScroll);
