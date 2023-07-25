@@ -302,10 +302,6 @@ nav {
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
     transition: 0.4s ease-in;
 }
-
-.hiddennav {
-  translatY(-200%);
-}
 nav ul {
   padding-left: 5vw;
   display: flex;
