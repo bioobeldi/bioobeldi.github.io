@@ -141,16 +141,16 @@ changeLanguage();
 
 
 // Récupérer la barre de navigation
-const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('nav');
 let prevScrollPos = window.pageYOffset;
 
 // Fonction pour détecter le sens du défilement et afficher/cacher la barre de navigation
 function handleScroll() {
   const currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
-    navbar.classList.remove('hidden');
+    navbar.classList.remove('hiddennav');
   } else {
-    navbar.classList.add('hidden');
+    navbar.classList.add('hiddennav');
   }
   prevScrollPos = currentScrollPos;
 }
