@@ -288,7 +288,7 @@ a:hover {
 
 
 nav {
-   position: fixed;
+  position: fixed;
   z-index: 999;
   background: #4f692a;
   top: 0;
@@ -408,7 +408,7 @@ nav li:hover {
   justify-content: center; /* Centrer horizontalement les éléments */
   align-items: center; /* Centrer verticalement les éléments */
 }
-/* CSS pour le footer */
+
 footer {
   background-color: #4f692a;
   padding: 20px 0;
@@ -566,8 +566,7 @@ footer .newsletter-form {
   }
   nav.active ul {
     position : absolute;
-    
-    margin-top: calc(2vw + 1vh) ;;
+    margin-top: calc(2vw + 1vh);
     left: -10vw;
     top: 5vh;
   }
