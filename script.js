@@ -137,10 +137,10 @@ if (storedLang) {
 }
 
 // Appel initial pour mettre à jour la langue par défaut
-changeLanguage(); 
-
+changeLanguage();
 
 const navbar = document.getElementById('nav');
+const langselect = document.getElementById('lang-select');
 let prevScrollPos = window.pageYOffset;
 let isNavbarHidden = false;
 
@@ -151,12 +151,14 @@ function handleScroll() {
     // Défilement vers le haut, afficher la barre de navigation
     if (isNavbarHidden) {
       navbar.style.transform = 'translateY(0)';
+      langselect.style.transform = 'translateY(0)';
       isNavbarHidden = false;
     }
   } else {
     // Défilement vers le bas, masquer la barre de navigation en mode fixe
     if (!isNavbarHidden) {
-      navbar.style.transform = 'translateY(-100%)';
+      navbar.style.transform = 'translateY(-110%)';
+      langselect.style.transform = 'translateY(-110%)';
       isNavbarHidden = true;
     }
   }
