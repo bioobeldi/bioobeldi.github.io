@@ -138,3 +138,22 @@ if (storedLang) {
 
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage();
+
+
+// Récupérer la barre de navigation
+const navbar = document.getElementById('navbar');
+let prevScrollPos = window.pageYOffset;
+
+// Fonction pour détecter le sens du défilement et afficher/cacher la barre de navigation
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    navbar.classList.remove('hidden');
+  } else {
+    navbar.classList.add('hidden');
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+// Ajouter un écouteur d'événement pour le défilement
+window.addEventListener('scroll', handleScroll);
