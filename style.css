@@ -288,6 +288,7 @@ a:hover {
 
 
 nav {
+   position: fixed;
   z-index: 999;
   background: #4f692a;
   top: 0;
@@ -301,10 +302,7 @@ nav {
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
     transition: 0.4s ease-in;
 }
-.fixednav {
-    position: fixed;
 
-}
 .hiddennav {
   translatY(-200%);
 }
