@@ -148,9 +148,9 @@ let prevScrollPos = window.pageYOffset;
 function handleScroll() {
   const currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
-    navbar.classList.remove('hiddennav');
-  } else {
     navbar.classList.add('hiddennav');
+  } else {
+    navbar.classList.remove('hiddennav');
   }
   prevScrollPos = currentScrollPos;
 }
