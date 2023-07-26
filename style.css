@@ -522,13 +522,13 @@ footer .newsletter-form {
   margin-top:calc(2vh + 2vw); ;
   margin-bottom:calc(4vh + 4vw + 20px);
 }
-@media (min-width: 888px) {
+@media (min-width: 998px) {
   #imgwtsp {
     margin-top: calc(0.3vh + 0.3vw);
   }
 }
 
-@media (max-width: 888px) {
+@media (max-width: 998px) {
   #icons {
     opacity: 1;
     visibility: visible;
