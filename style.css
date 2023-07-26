@@ -554,7 +554,7 @@ footer .newsletter-form {
     z-index: 1;
     position: fixed;
     left: -5vw;  
-    top: -20vh;
+    top: calc(-20vw - 20vh);
     flex-direction: column;
     background: #4f692a;
     width: 100%;
