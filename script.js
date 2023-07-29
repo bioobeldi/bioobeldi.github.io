@@ -69,7 +69,7 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
-    "legal": " بيو بيلدي، جميع الحقوق محفوظة 2023 ©",
+    "legal": " بيو بلدي، جميع الحقوق محفوظة 2023 ©",
     "adr": "شارع عبد الرحيم بوعبيد",
     "ville": "أڭادير، المغرب",
     "msgSM": "شارك تجربتك معنا ومع منتجاتنا، لا تتردد في ترك شهادة أو اقتراح أو نقد بنّاء ، واترك لنا إعجابًا على صفحتنا على فيسبوك وإنستجرام ",
