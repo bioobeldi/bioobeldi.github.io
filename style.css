@@ -290,7 +290,7 @@ a:hover {
 nav {
   position: fixed;
   z-index: 999;
-  background:#009B4D;
+  background:#4f692a; /*#009B4D;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -402,7 +402,7 @@ nav li:hover {
 .container-vert {
   width: 100%;
   min-height: 40vh; /* Utilisation de min-height pour s'assurer d'une hauteur minimale */
-  background-color: #009B4D;
+  background-color: #4f692a;
   transition: background-color 0.5s ease;
   display: flex; /* Afficher les éléments en ligne (horizontalement) */
   justify-content: center; /* Centrer horizontalement les éléments */
@@ -556,7 +556,7 @@ footer .newsletter-form {
     left: -5vw;  
     top: calc(-20vw - 20vh);
     flex-direction: column;
-    background: #009B4D;
+    background: #4f692a;
     width: 100%;
     text-align: center;
     transition: 0.25s;
