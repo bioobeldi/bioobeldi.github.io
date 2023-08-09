@@ -11,6 +11,9 @@ links.forEach((link) => {
 });
 const translations = {
   en: {
+    "h1olive": "Traditionally pressed Olive Oil",
+    "h1argan": "Bio traditional Argan Oil",
+    "h1amlou": "Amlou",
     "legal": "© 2023 BioBeldi. All right reserved 2023 ",
     "adr": "Abderrahim Bouabid avenue",
     "ville": "Agadir - Morocco",
@@ -40,6 +43,9 @@ const translations = {
     "placeholder-message": "Example: I want 1 liter of Argan oil and 1kg of Amlou to be delivered to Agadir.",
   },
   fr: {
+    "h1olive": "Huile d'Olive traditionnelle",
+    "h1argan": "Huile traditionnelle et bio d'Argane",
+    "h1amlou": "Amlou",
     "legal": "© 2023 BioBeldi. Tous droits réservés.",
     "adr": "Avenue Abderrahim Bouabid",
     "ville": "Agadir - Maroc",
@@ -69,6 +75,8 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
+    "h1argan": "",
+    "h1amlou": "آملو باللَّوز و الأرڭَان",
     "legal": " بيو بلدي، جميع الحقوق محفوظة 2023 ©",
     "adr": "شارع عبد الرحيم بوعبيد",
     "ville": "أڭادير، المغرب",
