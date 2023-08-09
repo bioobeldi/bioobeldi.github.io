@@ -75,7 +75,8 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
-    "h1argan": "",
+    "h1olive": "زيت الزّيتون معصرة تقليدية",
+    "h1argan": "زيت الأرڭَان ٪100 طبيعية",
     "h1amlou": "آملو باللَّوز و الأرڭَان",
     "legal": " بيو بلدي، جميع الحقوق محفوظة 2023 ©",
     "adr": "شارع عبد الرحيم بوعبيد",
