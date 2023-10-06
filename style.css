@@ -445,8 +445,7 @@ footer .social-icons {
 footer .social-icons a:hover {
   transition: 0.1s ease-in;
   transform: scale(1.4);
-
-
+  cursor: pointer;
 }
 footer .social-icons a {
   display: inline-block;
@@ -461,26 +460,19 @@ footer .social-icons a {
 #agmail img,
 #afb img,
 #amess img,
-#ainsta img {
-  width: calc(3vw + 3vh);
-  height: calc(3vw + 3vh);
+#ainsta img,
+#amaps img,
+#awtsp img
+{
+  width: calc(2vw + 2vh);
+  height: calc(2vw + 2vh);
   border-radius: 50%;
 
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
   background-color: transparent;
 }
-/* Adresse et informations de contact dans le footer */
-footer .contact-info {
-  margin-top: calc(1rem + 2vh + 2vw);
-  display: flex;
-  flex-direction: row;
-  width: 95vw;
-}
-.contact-info p {
-  line-height: calc(0.5em + 0.61vw + 0.61vh + 3px);
-  font-size: calc(0.6rem + 0.6vw);
-}
+
 /* Newsletter dans le footer */
 footer .newsletter-form {
   margin-top: calc(2vh + 2vw + 30px);
