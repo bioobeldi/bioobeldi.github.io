@@ -6,7 +6,12 @@ body, h1, p, img {
   margin: 0;
   padding: 0;
 }
-
+.produit-infos h3{
+  padding-top: calc(1vh + 1vw);
+  line-height: calc(1em + 2vw + 2vh);
+  font-size: calc(1.5rem + 2vw);
+  color:#b4df08;
+}
 p {
   width: 90%;
   max-width: 850px;
@@ -62,7 +67,7 @@ p {
   top: calc(4vh + 4vw);
   all: unset;
   position: absolute;
-
+  padding-top: calc(1vw + 1vh);
   height: calc(5vh + 5vw);
   width: 90vw;
   max-width: 750px;
