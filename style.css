@@ -6,7 +6,9 @@ body, h1, p, img {
   margin: 0;
   padding: 0;
 }
+
 .produit-infos h3{
+  margin-top: 20px;
   padding-top: calc(1vh + 1vw);
   line-height: calc(1em + 2vw + 2vh);
   font-size: calc(1.5rem + 2vw);
@@ -638,4 +640,9 @@ footer .contact-info {
   font-size: calc(0.8rem + 0.8vw);
 
 }
+}
+#amloua, #zitouna, #argana {
+  color:#b4df08;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
