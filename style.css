@@ -650,7 +650,12 @@ footer .contact-info {
   line-height: calc(0.6em + 0.81vw + 0.81vh);
   font-size: calc(0.8rem + 0.8vw);
 
+    }
 }
+
+.produit:hover .image-with-changing-lighting {
+  animation: none; /* Arrête l'animation au survol */
+  filter: brightness(50%); /* Fixe la luminosité à 50% au survol */
 }
 #amloua, #zitouna, #argana {
   color:#b4df08;
