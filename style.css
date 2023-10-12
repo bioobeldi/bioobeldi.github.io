@@ -522,6 +522,17 @@ footer .newsletter-form {
   margin-top:calc(2vh + 2vw); ;
   margin-bottom:calc(4vh + 4vw + 20px);
 }
+
+  @keyframes changeLighting {
+  0% { filter: brightness(50%); }
+  50% { filter: brightness(150%); }
+  100% { filter: brightness(50%); }
+}
+
+.image-with-changing-lighting {
+  animation: changeLighting 5s infinite; /* Réglez la durée et le nombre de répétitions selon vos préférences */
+}
+
 @media (min-width: 998px) {
   #imgwtsp {
     margin-top: calc(0.3vh + 0.3vw);
