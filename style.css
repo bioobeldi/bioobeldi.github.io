@@ -524,13 +524,13 @@ footer .newsletter-form {
 }
 
   @keyframes changeLighting {
-  0% { filter: brightness(50%); }
-  50% { filter: brightness(150%); }
-  100% { filter: brightness(50%); }
+  0% { filter: brightness(20%); }
+  50% { filter: brightness(120%); }
+  100% { filter: brightness(20%); }
 }
 
 .image-with-changing-lighting {
-  animation: changeLighting 5s infinite; /* Réglez la durée et le nombre de répétitions selon vos préférences */
+  animation: changeLighting 3s infinite;
 }
 
 @media (min-width: 998px) {
