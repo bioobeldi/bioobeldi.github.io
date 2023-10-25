@@ -1,0 +1,28 @@
+{
+  "name": {
+    "en": "Premium Oils: Argan & Olive - Secure Cash on Delivery",
+    "fr": "Huiles Premium : Argan & Olive - Paiement à la livraison sécurisé",
+    "ar": "زيوت عالية الجودة : الأركان والزيتون - الدفع نقدًا عند الاستلام"
+  },
+  "short_name": {
+    "en": "Premium Oils Hub",
+    "fr": "La source des Huiles Premium",
+    "ar": "منبع الزيوت المتميزة"
+  },
+  "description": {
+    "en": "Discover the pinnacle of natural beauty with our collection of premium argan and olive oils, perfect for both skincare and haircare, as well as enhancing your culinary experience. Immerse yourself in the richness of high-quality products that transform your self-care rituals and elevate your dishes. We offer the convenience of cash on delivery, ensuring a secure and hassle-free shopping experience. Elevate your self-care routine with the nourishing power of nature at Bio Beldi.",
+    "fr": "Découvrez l'apogée de la beauté naturelle avec notre collection d'huiles d'argan et d'olive de qualité supérieure, idéales tant pour les soins de la peau et des cheveux que pour une expérience culinaire raffinée. Plongez dans la richesse de produits de qualité qui transforment vos rituels de soins et subliment vos plats. Nous vous proposons la commodité du paiement à la livraison, garantissant une expérience d'achat sécurisée et sans tracas. Rehaussez votre routine d'auto-soins avec le pouvoir nourrissant de la nature sur Bio Beldi.",
+    "ar": "اكتشفو قمة الجمال الطبيعي مع مجموعتنا من زيوت الأرڭان والزيتون الفاخرة، المثالية لاضافة نكهات بلدية خارقة للطهي، فضلاً عن العناية بالبشرة والشعر. انغمسو في ثراء المنتجات عالية الجودة التي تغير طقوس الرعاية الذاتية لديكم وترفع مستوى أطباقكم. نحن نقدم لكم راحة الدفع عند التسليم، مما يضمن تجربة تسوق آمنة وخالية من المتاعب. ارفع روتين الرعاية الذاتية الخاص بكم مع قوة الطبيعة المغذية في منتجات بيو بلدي."
+  },
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f692a",
+  "icons": [
+    {
+      "src": "img/fond.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
