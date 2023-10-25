@@ -14,13 +14,13 @@
     "fr": "Découvrez l'apogée de la beauté naturelle avec notre collection d'huiles d'argan et d'olive de qualité supérieure, idéales tant pour les soins de la peau et des cheveux que pour une expérience culinaire raffinée. Plongez dans la richesse de produits de qualité qui transforment vos rituels de soins et subliment vos plats. Nous vous proposons la commodité du paiement à la livraison, garantissant une expérience d'achat sécurisée et sans tracas. Rehaussez votre routine d'auto-soins avec le pouvoir nourrissant de la nature sur Bio Beldi.",
     "ar": "اكتشفو قمة الجمال الطبيعي مع مجموعتنا من زيوت الأرڭان والزيتون الفاخرة، المثالية لاضافة نكهات بلدية خارقة للطهي، فضلاً عن العناية بالبشرة والشعر. انغمسو في ثراء المنتجات عالية الجودة التي تغير طقوس الرعاية الذاتية لديكم وترفع مستوى أطباقكم. نحن نقدم لكم راحة الدفع عند التسليم، مما يضمن تجربة تسوق آمنة وخالية من المتاعب. ارفع روتين الرعاية الذاتية الخاص بكم مع قوة الطبيعة المغذية في منتجات بيو بلدي."
   },
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#f5f5f5",
   "theme_color": "#4f692a",
   "icons": [
     {
-      "src": "img/fond.jpg",
+      "src": "/img/fond.jpg",
       "sizes": "192x192",
       "type": "image/png"
     }
