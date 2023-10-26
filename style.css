@@ -234,7 +234,7 @@ li {
 li {
   display: inline-block;
   background: #5d812b;
-  padding: 0 0 2px 0;
+  padding: 0 0 0 0;
   border-radius: 20px;
   /* Ajustez le rayon de bordure pour arrondir les coins */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -258,22 +258,16 @@ a:hover {
 }
 
 #btn-wtsp {
-  display: inline-block;
   background: #f2eded;
 }
 
-#btn-wtsp a {
-  position: relative;
-  top: 0;
-  left: 0;
-}
 
 #btn-wtsp:hover {
   transform: scale(1.1);
 }
 
 #wtsp {
-  padding: 0 15px 0 15px;
+
   color: #0c0c0c;
   display: inline-flex;
   /* Affiche les éléments en ligne (horizontalement) */
@@ -289,7 +283,7 @@ a:hover {
   height: calc(0.7rem + 1.5vw);
   margin-right: 5px;
   /* Espacement entre l'image et le texte */
-  padding: 0 0 0 10px;
+  padding: 0 10px 0 0;
 }
 
 
@@ -630,7 +624,13 @@ footer .newsletter-form {
   footer .container {
     align-items: center;
   }
-
+  #spanwtsp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 }
 
 @media (max-width: 630px) {
