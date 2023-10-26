@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // La page a fini de charger, ajoute la classe "loaded" au corps
-  document.body.classList.add("loaded");
-});
-
 const links = document.querySelectorAll('nav li');
 
 icons.addEventListener("click",() => {
