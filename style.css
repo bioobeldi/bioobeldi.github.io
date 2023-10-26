@@ -672,9 +672,6 @@ footer .contact-info {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-
-
-
 #loading-container {
   position: fixed;
   top: 0;
@@ -687,13 +684,9 @@ footer .contact-info {
   align-items: center;
   z-index: 9999; /* Assure que le conteneur de chargement est au-dessus de tout le reste */
 }
-
-.logoload {
-  width: calc(20vh + 20vw); /* Ajuste la taille selon tes besoins */
-  height: calc(20vh + 20vw);
-  animation: rotateColorChange 2s linear infinite;
+#imgwtsp {
+  animation: rotateColorChange 2.5s linear infinite;
 }
-
 @keyframes rotateColorChange {
   0% {
     transform: rotate(0deg);
@@ -701,14 +694,11 @@ footer .contact-info {
   }
   50% {
     transform: rotate(180deg);
-    filter: hue-rotate(90deg); /* Rotation de couleur à mi-chemin */
+    filter: hue-rotate(40deg); /* Rotation de couleur à mi-chemin */
   }
   100% {
     transform: rotate(360deg);
-    filter: hue-rotate(180deg); /* Nouvelle couleur à la fin */
+    filter: hue-rotate(80deg); /* Nouvelle couleur à la fin */
   }
 }
 
-body.loaded #loading-container {
-  display: none; /* Cache le conteneur de chargement une fois la page chargée */
-}
