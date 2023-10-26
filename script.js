@@ -1,4 +1,3 @@
-// JavaScript complet pour le comportement du menu mobile
 const links = document.querySelectorAll('nav li');
 
 icons.addEventListener("click",() => {
@@ -82,7 +81,7 @@ const translations = {
     "adr": "شارع عبد الرحيم بوعبيد",
     "ville": "أڭادير، المغرب",
     "msgSM": "شارك تجربتك معنا ومع منتجاتنا، لا تتردد في ترك شهادة أو اقتراح أو نقد بنّاء ، واترك لنا إعجابًا على صفحتنا على فيسبوك وإنستجرام ",
-    "spanwtsp": "واتسابينا",
+    "spanwtsp": "واتساب",
     "arganp": "زيت أرڭان موسمية",
     "argana": ">> زيت أرڭان صافية و حرة <<",
     "zitouna": ">> أفضل زيوت زيتون معصورة تقليديا <<",
