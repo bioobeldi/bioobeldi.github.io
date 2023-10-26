@@ -233,7 +233,7 @@ li {
 
 li {
   display: inline-block;
-  background: #5d812b;
+  background: #f2eded;
   padding: 0 0 0 0;
   border-radius: 20px;
   /* Ajustez le rayon de bordure pour arrondir les coins */
@@ -247,15 +247,28 @@ li:hover {
 
 a,
 a:visited {
-  color: #f6f5f2;
   text-decoration: none;
   text-transform: uppercase;
 }
-
-
-a:hover {
-  color: #0c0c0c;
+#product-argan-oil {
+  color: #eea005;
 }
+#product-argan-oil:hover {
+  color: #ffdb0c;
+}
+#product-olive-oil {
+  color: #4b5214;
+}
+#product-olive-oil:hover {
+  color: #d9f40f;
+}
+#product-amlou {
+  color:#7c4e26;
+}
+#product-amlou:hover {
+  color:#59300b;
+}
+
 
 #btn-wtsp {
   background: #f2eded;
@@ -313,7 +326,7 @@ nav ul {
 
 
 li a {
-  padding: 4px 20px 4px 20px;
+  padding: 2px 15px 2px 15px;
 }
 
 nav li:hover {
@@ -570,14 +583,15 @@ footer .newsletter-form {
     transition: 0.4s ease-out;
   }
   nav li {
-    padding: 10px 10px;
+    padding: 0 0 0 0;
   }
   nav li:hover {
     background: #628a2b;
   }
   nav.active ul {
     position : absolute;
-    margin-top: calc(2vw + 1vh);
+    margin-top: calc(1vw + 0.5vh);
+    margin-bottom: calc(1vw + 0.5vh);
     left: -5vw;
     top: 5vh;
     transition: 0.4s ease-in;
@@ -586,11 +600,11 @@ footer .newsletter-form {
   nav.active li {
     position: relative;
     width: calc(20vw + 20vh) ;
-    height: calc(3vw + 1vh) ;
+    height: calc(3vw + 2vh) ;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: calc(2vw + 1vh) ;
-    margin-top: calc(2vw + 1vh) ;
+    margin-bottom: calc(1vw + 1vh) ;
+    margin-top: calc(1vw + 1vh) ;
   }
   nav.active li a span {
     transform: translate(50%, 0%);
@@ -602,7 +616,7 @@ footer .newsletter-form {
     height: calc(3vw + 1vh) ;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -50%);
     transition: transform 0.2s ease-in-out;
   }
   nav.active li a#wtsp {
@@ -611,7 +625,7 @@ footer .newsletter-form {
     height: calc(3vw + 1vh) ;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -50%);
     transition: transform 0.2s ease-in-out;
   }
   nav.active li a#wtsp img {
@@ -648,7 +662,7 @@ footer .contact-info {
   line-height: calc(0.6em + 0.81vw + 0.81vh);
   font-size: calc(0.8rem + 0.8vw);
 
-    }
+  }
 }
 
 .produit:hover .image-with-changing-lighting {
