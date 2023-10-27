@@ -690,15 +690,15 @@ footer .contact-info {
 @keyframes rotateColorChange {
   0% {
     transform: rotate(0deg);
-    filter: hue-rotate(0deg); /* Pas de changement de couleur initial */
+
   }
   50% {
     transform: rotate(180deg);
-    filter: hue-rotate(40deg); /* Rotation de couleur à mi-chemin */
+
   }
   100% {
     transform: rotate(360deg);
-    filter: hue-rotate(80deg); /* Nouvelle couleur à la fin */
+
   }
 }
 
