@@ -98,11 +98,20 @@
       
           <button type="submit"><span id="label-submit">Envoyer</span></button>
       </form>
-
-<!-- Remarkbox - Your readers want to communicate with you -->
+   </div>
+<section class="bvn">
+ <!-- Remarkbox - Your readers want to communicate with you -->
 <div id="remarkbox-div">
   <noscript>
     <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="max-width:600px;height:600px;width:40vw;border:none!important" tabindex=0></iframe>
+      <style>
+  @media (min-width: 768px) {
+    #remarkbox-iframe {
+      max-width: 600px;
+      margin: 0 auto; /* Pour centrer l'iframe sur l'écran large */
+    }
+  }
+</style>
   </noscript>
 </div>
 <script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
@@ -140,11 +149,7 @@
     document.getElementById("remarkbox-iframe")
   );
 </script>
-        
-        
-   </div>
- 
-
+</section>
  
     <footer>
       <div class="container">
