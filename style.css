@@ -685,16 +685,16 @@ footer .contact-info {
   z-index: 9999; /* Assure que le conteneur de chargement est au-dessus de tout le reste */
 }
 #imgwtsp {
-  animation: rotateColorChange 5s linear infinite;
+  animation: rotateColorChange 6s linear infinite;
 }
 @keyframes rotateColorChange {
   0%, 100% {
     transform: rotate(0deg);
   }
-  25% {
+  20% {
     transform: rotate(180deg);
   }
-  50%, 75% {
+  60%, 80% {
     transform: rotate(360deg);
   }
 }
