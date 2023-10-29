@@ -409,7 +409,6 @@ nav li:hover {
 .container-blanc {
   align-items: center;
   position: relative;
-  background-color: #d3ebb2;
   transition: background-color 0.5s ease;
 }
 
