@@ -1,6 +1,8 @@
-#remarkbox-div {
-width:50vw;
 
+@media (min-width: 800px) {
+  #remarkbox-div {
+    width:50vw;
+    }
 }  
 
 html {
