@@ -103,15 +103,7 @@
  <!-- Remarkbox - Your readers want to communicate with you -->
 <div id="remarkbox-div">
   <noscript>
-    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="max-width:600px;height:600px;width:40vw;border:none!important" tabindex=0></iframe>
-      <style>
-  @media (min-width: 768px) {
-    #remarkbox-iframe {
-      max-width: 600px;
-      margin: 0 auto; /* Pour centrer l'iframe sur l'écran large */
-    }
-  }
-</style>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:40vw;border:none!important" tabindex=0></iframe>
   </noscript>
 </div>
 <script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
@@ -136,7 +128,7 @@
     ifrm.setAttribute("frameborder", "0");
     ifrm.setAttribute("tabindex", "0");
     ifrm.setAttribute("title", "Remarkbox");
-    ifrm.style.width = "100%";
+    ifrm.style.width = "80%";
     document.getElementById("remarkbox-div").appendChild(ifrm);
   }
   create_remarkbox_iframe();
