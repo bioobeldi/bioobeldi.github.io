@@ -7,6 +7,15 @@ body, h1, p, img {
   padding: 0;
 }
 
+h2 {
+  margin-bottom: calc(2vh + 2vw);
+  margin-top: calc(2vh + 2vw);
+  padding: 15px; /* Ajustez si nécessaire */
+  text-align: center;
+  font-size: calc(1rem + 2vw); /* Taille différente par rapport à h1 */
+  color: #4f692a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
 .produit-infos h3{
   margin-top: 20px;
   padding-top: calc(1vh + 1vw);
