@@ -10,6 +10,7 @@ links.forEach((link) => {
 });
 const translations = {
   en: {
+    "pprincipal": "We are a group of small-scale producers of Olive oil and Argan oil in the Aourir region near Agadir. We come together to promote our local products and showcase their quality.",
     "h1olive": "Traditionally pressed Olive Oil",
     "h1argan": "Bio traditional Argan Oil",
     "h1amlou": "Amlou",
@@ -42,6 +43,7 @@ const translations = {
     "placeholder-message": "Example: I want 1 liter of Argan oil and 1kg of Amlou to be delivered to Agadir.",
   },
   fr: {
+    "pprincipal": "Nous sommes un groupe de petits producteurs d'huile d'olive et d'argan dans la région d'Aourir près d'Agadir. Nous unissons nos efforts pour promouvoir nos produits locaux et faire connaître leur qualité.",
     "h1olive": "Huile d'Olive traditionnelle",
     "h1argan": "Huile traditionnelle et bio d'Argane",
     "h1amlou": "Amlou",
@@ -74,6 +76,7 @@ const translations = {
     "placeholder-message": "Exemple : Je veux 1 litre de l'huile d'Argan, et 1kg de Amlou, livrer à Agadir",
   },
   ar: {
+    "pprincipal": "مجموعة من صغار منتجي زيت الزيتون و الأرڭان بمنطقة أورير قرب أڭادير، نحاول تجميع الجهود للترويج لمنتجاتنا المحلية و التعريف بجودتها",
     "h1olive": "زيت الزّيتون معصرة تقليدية",
     "h1argan": "زيت الأرڭَان ٪100 طبيعية",
     "h1amlou": "آملو باللَّوز و الأرڭَان",
