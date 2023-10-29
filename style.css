@@ -26,7 +26,7 @@ h2 {
 p {
   width: 90%;
   max-width: 850px;
-  text-align: left;
+  text-align: center;
   margin: 0 2.5vw 3vw 2.5vw;
   line-height: calc(1em + 1vw + 1vh);
   font-size: calc(1rem + 1vw);
