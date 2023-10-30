@@ -17,7 +17,7 @@ body, h1, p, img {
   justify-content: center;
   position: relative;
   transition: background-color 0.5s ease;
-  background-color:#4f692a;
+  background-color:#ffffff;
 }
 h2 {
   margin-bottom: calc(2vh + 2vw);
