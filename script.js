@@ -156,25 +156,26 @@ let prevScrollPos = window.pageYOffset;
 let isNavbarHidden = false;
 
 function handleScroll() {
-  const currentScrollPos = window.pageYOffset;
+  // Vérifier la largeur de la fenêtre
+  if (window.innerWidth >= 768) {
+    const currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
-    // Défilement vers le haut, afficher la barre de navigation
-    if (isNavbarHidden) {
-      navbar.style.transform = 'translateY(0)';
-      langselect.style.transform = 'translateY(0)';
-      isNavbarHidden = false;
+    if (prevScrollPos > currentScrollPos) {
+      if (isNavbarHidden) {
+        navbar.style.transform = 'translateY(0)';
+        langselect.style.transform = 'translateY(0)';
+        isNavbarHidden = false;
+      }
+    } else {
+      if (!isNavbarHidden) {
+        navbar.style.transform = 'translateY(-110%)';
+        langselect.style.transform = 'translateY(-100vh)';
+        isNavbarHidden = true;
+      }
     }
-  } else {
-    // Défilement vers le bas, masquer la barre de navigation en mode fixe
-    if (!isNavbarHidden) {
-      navbar.style.transform = 'translateY(-110%)';
-      langselect.style.transform = 'translateY(-100vh)';
-      isNavbarHidden = true;
-    }
+
+    prevScrollPos = currentScrollPos;
   }
-
-  prevScrollPos = currentScrollPos;
 }
 
 window.addEventListener('scroll', handleScroll);
