@@ -617,6 +617,8 @@ footer .newsletter-form {
   }
   nav.active li a#wtsp {
     position: absolute;
+    width: calc(20vw + 20vh) ;
+    height: calc(3vw + 1vh) ;
     top: 50%;
     left: 50%;
     transform: translate(-49%, -50%);
