@@ -150,8 +150,33 @@ if (storedLang) {
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage();
 
-const navbar = document.getElementById('nav');
 const langselect = document.getElementById('lang-select');
+const navbar = document.getElementById('nav');
+const icons = document.getElementById('icons');
+const links = document.querySelectorAll('nav li');
+
+// Fonction pour fermer la barre de navigation
+function closeNavbar() {
+  navbar.classList.remove('active');
+}
+
+icons.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", closeNavbar);
+});
+
+// Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
+document.addEventListener('click', (event) => {
+  const isClickInsideNavbar = navbar.contains(event.target) || icons.contains(event.target);
+  
+  if (!isClickInsideNavbar) {
+    closeNavbar();
+  }
+});
+
 let prevScrollPos = window.pageYOffset;
 let isNavbarHidden = false;
 
@@ -179,3 +204,4 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
