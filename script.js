@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('nav li');
-const navbar = document.getElementById('nav');
+const nav = document.getElementById('nav');
 const icons = document.getElementById('icons');
 icons.addEventListener("click",() => {
   nav.classList.toggle("active")
