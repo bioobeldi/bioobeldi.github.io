@@ -201,5 +201,12 @@ function handleScroll() {
   }
 }
 
+document.addEventListener('click', (event) => {
+  const isClickInsideNavbar = nav.contains(event.target) || icons.contains(event.target);
+
+  if (!isClickInsideNavbar) {
+    closeNavbar();
+  }
+});
 window.addEventListener('scroll', handleScroll);
 
