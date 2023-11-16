@@ -556,7 +556,6 @@ footer .newsletter-form {
     visibility: visible;
     padding-right: 5vw;
     margin-top: 10px;
-
     z-index: 9999999;
   }
 
@@ -570,30 +569,28 @@ footer .newsletter-form {
     content: "\2715";
     fill: #ffffff;
     font-size: 1.5em;
-    padding-right: 5vw;
   }
   nav ul {
     z-index: 1;
     position: fixed;
-    left: -5vw;  
+    left: -5vw;
     top: calc(-20vw - 20vh);
     flex-direction: column;
     background: #4f692a;
     width: 100%;
     text-align: center;
-    transition: 0.25s;
     padding-bottom: 20px;
     transform: scaleY(0.05);
-    transition: 0.4s ease-out;
+    transition: 0.25s;
   }
   nav li {
-    padding: 0 0 0 0;
+    padding: 0;
   }
   nav li:hover {
     background: #628a2b;
   }
   nav.active ul {
-    position : absolute;
+    position: absolute;
     margin-top: calc(1vw + 0.5vh);
     margin-bottom: calc(1vw + 0.5vh);
     left: -5vw;
@@ -603,33 +600,31 @@ footer .newsletter-form {
   }
   nav.active li {
     position: relative;
-    width: calc(20vw + 20vh) ;
-    height: calc(3vw + 2vh) ;
+    width: calc(20vw + 20vh);
+    height: calc(3vw + 2vh);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: calc(1vw + 1vh) ;
-    margin-top: calc(1vw + 1vh) ;
+    margin-bottom: calc(1vw + 1vh);
+    margin-top: calc(1vw + 1vh);
   }
   nav.active li a span {
     transform: translate(50%, 0%);
   }
 
   nav.active li a {
-    width: calc(20vw + 20vh) ;
+    width: calc(20vw + 20vh);
     transition: transform 0.2s ease-in-out;
   }
   nav.active li a#wtsp {
     position: absolute;
-    width: calc(20vw + 20vh) ;
-    height: calc(3vw + 1vh) ;
     top: 50%;
     left: 50%;
     transform: translate(-49%, -50%);
     transition: transform 0.2s ease-in-out;
   }
   nav.active li a#wtsp img {
-    width: calc(3vw + 2vh) ;
-    height: calc(3vw + 2vh) ;
+    width: calc(3vw + 2vh);
+    height: calc(3vw + 2vh);
   }
   li a::after {
     content: none;
@@ -646,8 +641,8 @@ footer .newsletter-form {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
 }
+
 
 @media (max-width: 630px) {
 footer .contact-info {
