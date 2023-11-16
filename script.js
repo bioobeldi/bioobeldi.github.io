@@ -1,3 +1,5 @@
+document.addEventListener('click', handleOutsideClick);
+document.addEventListener('touchstart', handleOutsideClick);
 const links = document.querySelectorAll('nav li');
 const nav = document.getElementById('nav');
 const icons = document.getElementById('icons');
