@@ -1,5 +1,6 @@
 const links = document.querySelectorAll('nav li');
-
+const navbar = document.getElementById('nav');
+const icons = document.getElementById('icons');
 icons.addEventListener("click",() => {
   nav.classList.toggle("active")
 });
@@ -150,10 +151,7 @@ if (storedLang) {
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage();
 
-const langselect = document.getElementById('lang-select');
-const navbar = document.getElementById('nav');
-const icons = document.getElementById('icons');
-const links = document.querySelectorAll('nav li');
+
 
 // Fonction pour fermer la barre de navigation
 function closeNavbar() {
