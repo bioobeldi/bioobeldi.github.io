@@ -157,11 +157,11 @@ changeLanguage();
 
 // Fonction pour fermer la barre de navigation
 function closeNavbar() {
-  navbar.classList.remove('active');
+  nav.classList.remove('active');
 }
 
 icons.addEventListener("click", () => {
-  navbar.classList.toggle("active");
+  nav.classList.toggle("active");
 });
 
 links.forEach((link) => {
@@ -170,7 +170,7 @@ links.forEach((link) => {
 
 // Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
 document.addEventListener('click', (event) => {
-  const isClickInsideNavbar = navbar.contains(event.target) || icons.contains(event.target);
+  const isClickInsideNavbar = nav.contains(event.target) || icons.contains(event.target);
   
   if (!isClickInsideNavbar) {
     closeNavbar();
@@ -187,13 +187,13 @@ function handleScroll() {
 
     if (prevScrollPos > currentScrollPos) {
       if (isNavbarHidden) {
-        navbar.style.transform = 'translateY(0)';
+        nav.style.transform = 'translateY(0)';
         langselect.style.transform = 'translateY(0)';
         isNavbarHidden = false;
       }
     } else {
       if (!isNavbarHidden) {
-        navbar.style.transform = 'translateY(-110%)';
+        nav.style.transform = 'translateY(-110%)';
         langselect.style.transform = 'translateY(-100vh)';
         isNavbarHidden = true;
       }
