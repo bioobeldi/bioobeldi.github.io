@@ -1,8 +1,5 @@
-document.addEventListener('click', handleOutsideClick);
-document.addEventListener('touchstart', handleOutsideClick);
 const links = document.querySelectorAll('nav li');
-const nav = document.getElementById('nav');
-const icons = document.getElementById('icons');
+
 icons.addEventListener("click",() => {
   nav.classList.toggle("active")
 });
@@ -153,30 +150,8 @@ if (storedLang) {
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage();
 
-
-
-// Fonction pour fermer la barre de navigation
-function closeNavbar() {
-  nav.classList.remove('active');
-}
-
-icons.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
-
-links.forEach((link) => {
-  link.addEventListener("click", closeNavbar);
-});
-
-// Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
-document.addEventListener('click', (event) => {
-  const isClickInsideNavbar = nav.contains(event.target) || icons.contains(event.target);
-  
-  if (!isClickInsideNavbar) {
-    closeNavbar();
-  }
-});
-
+const navbar = document.getElementById('nav');
+const langselect = document.getElementById('lang-select');
 let prevScrollPos = window.pageYOffset;
 let isNavbarHidden = false;
 
@@ -187,13 +162,13 @@ function handleScroll() {
 
     if (prevScrollPos > currentScrollPos) {
       if (isNavbarHidden) {
-        nav.style.transform = 'translateY(0)';
+        navbar.style.transform = 'translateY(0)';
         langselect.style.transform = 'translateY(0)';
         isNavbarHidden = false;
       }
     } else {
       if (!isNavbarHidden) {
-        nav.style.transform = 'translateY(-110%)';
+        navbar.style.transform = 'translateY(-110%)';
         langselect.style.transform = 'translateY(-100vh)';
         isNavbarHidden = true;
       }
@@ -203,12 +178,4 @@ function handleScroll() {
   }
 }
 
-document.addEventListener('click', (event) => {
-  const isClickInsideNavbar = nav.contains(event.target) || icons.contains(event.target);
-
-  if (!isClickInsideNavbar) {
-    closeNavbar();
-  }
-});
 window.addEventListener('scroll', handleScroll);
-
