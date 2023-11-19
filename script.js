@@ -185,10 +185,10 @@ window.addEventListener('scroll', handleScroll);
 
 // Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
 document.addEventListener('click', (event) => {
-  const isClickInsideNavbar = navbar.contains(event.target) || icons.contains(event.target);
+  const isClickInsideNavbar = nav.contains(event.target) || icons.contains(event.target);
 
   if (!isClickInsideNavbar) {
-    navbar.classList.remove('active');
+    nav.classList.remove('active');
     langselect.style.transform = 'translateY(0)';
     isNavbarHidden = false;
   }
