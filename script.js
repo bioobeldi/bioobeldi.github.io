@@ -183,14 +183,28 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 
-// Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
-document.addEventListener('click', (event) => {
-  const isClickInsideNavbar = nav.contains(event.target) || icons.contains(event.target);
+// Fonction pour fermer la barre de navigation
+function closeNavbar() {
+  navbar.classList.remove('active');
+  langselect.style.transform = 'translateY(0)';
+  isNavbarHidden = false;
+}
 
-  if (!isClickInsideNavbar) {
-    nav.classList.remove('active');
-    langselect.style.transform = 'translateY(0)';
-    isNavbarHidden = false;
-  }
+icons.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+  langselect.style.transform = 'translateY(0)';
+  isNavbarHidden = false;
 });
 
+links.forEach((link) => {
+  link.addEventListener("click", closeNavbar);
+});
+
+// Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
+document.addEventListener('click', (event) => {
+  const isClickInsideNavbar = navbar.contains(event.target) || icons.contains(event.target);
+
+  if (!isClickInsideNavbar) {
+    closeNavbar();
+  }
+});
