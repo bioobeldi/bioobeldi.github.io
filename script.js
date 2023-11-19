@@ -8,6 +8,46 @@ links.forEach((link) => {
     nav.classList.remove("active");
   })
 });
+
+function changeLanguage() {
+  const selectedLang = document.getElementById("lang-select").value;
+
+  for (const key in translations[selectedLang]) {
+    const element = document.getElementById(key);
+    if (element) {
+      // Vérifier si l'élément est un champ de formulaire avec l'attribut "placeholder"
+      if (element.placeholder !== undefined) {
+        element.placeholder = translations[selectedLang][key];
+      } else {
+        element.textContent = translations[selectedLang][key];
+      }
+    }
+  }
+  // Mettre à jour spécifiquement les placeholders du formulaire
+  const phoneInput = document.getElementById("phone");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+  if (phoneInput && emailInput && messageInput) {
+    phoneInput.placeholder = translations[selectedLang]["placeholder-phone"];
+    emailInput.placeholder = translations[selectedLang]["placeholder-email"];
+    messageInput.placeholder = translations[selectedLang]["placeholder-message"];
+  }
+
+  // Sauvegarder la langue sélectionnée dans le localStorage
+  localStorage.setItem("selectedLang", selectedLang);
+}
+
+// Vérifier si la langue a déjà été sélectionnée et la récupérer depuis le localStorage
+const storedLang = localStorage.getItem("selectedLang");
+if (storedLang) {
+  // Sélectionner la langue précédemment choisie dans le sélecteur
+  document.getElementById("lang-select").value = storedLang;
+}
+
+// Appel initial pour mettre à jour la langue par défaut
+changeLanguage();
+
 const translations = {
   en: {
     "pprincipal": "We are a group of small-scale producers of Olive oil and Argan oil in the Aourir region near Agadir. We come together to promote our local products and showcase their quality.",
@@ -110,45 +150,8 @@ const translations = {
   },
 };
 
-function changeLanguage() {
-  const selectedLang = document.getElementById("lang-select").value;
 
-  for (const key in translations[selectedLang]) {
-    const element = document.getElementById(key);
-    if (element) {
-      // Vérifier si l'élément est un champ de formulaire avec l'attribut "placeholder"
-      if (element.placeholder !== undefined) {
-        element.placeholder = translations[selectedLang][key];
-      } else {
-        element.textContent = translations[selectedLang][key];
-      }
-    }
-  }
 
-  // Mettre à jour spécifiquement les placeholders du formulaire
-  const phoneInput = document.getElementById("phone");
-  const emailInput = document.getElementById("email");
-  const messageInput = document.getElementById("message");
-
-  if (phoneInput && emailInput && messageInput) {
-    phoneInput.placeholder = translations[selectedLang]["placeholder-phone"];
-    emailInput.placeholder = translations[selectedLang]["placeholder-email"];
-    messageInput.placeholder = translations[selectedLang]["placeholder-message"];
-  }
-
-  // Sauvegarder la langue sélectionnée dans le localStorage
-  localStorage.setItem("selectedLang", selectedLang);
-}
-
-// Vérifier si la langue a déjà été sélectionnée et la récupérer depuis le localStorage
-const storedLang = localStorage.getItem("selectedLang");
-if (storedLang) {
-  // Sélectionner la langue précédemment choisie dans le sélecteur
-  document.getElementById("lang-select").value = storedLang;
-}
-
-// Appel initial pour mettre à jour la langue par défaut
-changeLanguage();
 
 const navbar = document.getElementById('nav');
 const langselect = document.getElementById('lang-select');
@@ -179,3 +182,30 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+// Fonction pour fermer la barre de navigation
+function closeNavbar() {
+  navbar.classList.remove('active');
+  langselect.style.transform = 'translateY(0)';
+  isNavbarHidden = false;
+}
+
+icons.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+  langselect.style.transform = 'translateY(0)';
+  isNavbarHidden = false;
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", closeNavbar);
+});
+
+// Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
+document.addEventListener('click', (event) => {
+  const isClickInsideNavbar = navbar.contains(event.target) || icons.contains(event.target);
+
+  if (!isClickInsideNavbar) {
+    closeNavbar();
+  }
+});
+
