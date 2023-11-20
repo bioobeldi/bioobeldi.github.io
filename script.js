@@ -1,3 +1,13 @@
+const links = document.querySelectorAll('nav li');
+
+icons.addEventListener("click",() => {
+  nav.classList.toggle("active")
+});
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  })
+});
 const translations = {
   en: {
     "pprincipal": "We are a group of small-scale producers of Olive oil and Argan oil in the Aourir region near Agadir. We come together to promote our local products and showcase their quality.",
@@ -100,17 +110,6 @@ const translations = {
   },
 };
 
-const links = document.querySelectorAll('nav li');
-
-icons.addEventListener("click",() => {
-  nav.classList.toggle("active")
-});
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("active");
-  })
-});
-
 function changeLanguage() {
   const selectedLang = document.getElementById("lang-select").value;
 
@@ -125,6 +124,7 @@ function changeLanguage() {
       }
     }
   }
+
   // Mettre à jour spécifiquement les placeholders du formulaire
   const phoneInput = document.getElementById("phone");
   const emailInput = document.getElementById("email");
@@ -149,6 +149,7 @@ if (storedLang) {
 
 // Appel initial pour mettre à jour la langue par défaut
 changeLanguage();
+
 const navbar = document.getElementById('nav');
 const langselect = document.getElementById('lang-select');
 let prevScrollPos = window.pageYOffset;
@@ -178,29 +179,3 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
-
-// Fonction pour fermer la barre de navigation
-function closeNavbar() {
-  navbar.classList.remove('active');
-  langselect.style.transform = 'translateY(0)';
-  isNavbarHidden = false;
-}
-
-icons.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-  langselect.style.transform = 'translateY(0)';
-  isNavbarHidden = false;
-});
-
-links.forEach((link) => {
-  link.addEventListener("click", closeNavbar);
-});
-
-// Ajouter un écouteur d'événements pour fermer la barre de navigation lorsqu'on clique en dehors d'elle
-document.addEventListener('click', (event) => {
-  const isClickInsideNavbar = navbar.contains(event.target) || icons.contains(event.target);
-
-  if (!isClickInsideNavbar) {
-    closeNavbar();
-  }
-});
