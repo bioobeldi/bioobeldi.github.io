@@ -42,16 +42,20 @@
  </head>
  
  <body>
-
   <!-- choix langues-->
-    <div class="lang-switcher">
-        <select id="lang-select" onchange="changeLanguage()">
-          <option value="fr" selected>Français</option>
-          <option value="en">English</option>
-          <option value="ar">عربي</option>
-        </select>
+<div class="lang-switcher">
+  <div class="language-grid" id="language-grid">
+    <div class="language-option" onclick="changeLanguage('ar')">
+      <img src="img/arabic.png" alt="Arabic" />
     </div>
-
+    <div class="language-option" onclick="changeLanguage('fr')">
+      <img src="img/french.png" alt="French" />
+    </div>
+    <div class="language-option" onclick="changeLanguage('en')">
+      <img src="img/english.png" alt="English" />
+    </div>
+  </div>
+</div>
     <nav id="nav">                       <!--nav barre-->
       <div class="logo">                     <!--logo site-->
         <a href="https://bioobeldi.github.io/"><img src="img/fond.jpg" alt="Logo vendre huile olive maroc casa agadir tanger beni mellal rabat laayoune ouarzazate taroudant errachidia zagoura agadir guélmim ouejda chefchouan elhoceima"></a>
