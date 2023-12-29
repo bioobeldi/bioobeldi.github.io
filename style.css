@@ -6,11 +6,40 @@ body, h1, p, img {
   margin: 0;
   padding: 0;
 }
-#cusdis_thread {
-  width: 80%;
-  margin: auto;
-  max-width: 450px;
+.lang-switcher {
+  text-align: center;
+  position: fixed;
+  top : 0;
+  right : 0;
+  z-index: 10000000;
 }
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.language-option {
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(10px + 1.5vh + 1.5vw);
+  height: calc(10px + 1.5vh + 1.5vw);
+}
+
+.language-option img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style facultatif pour le survol de la souris */
+.language-option:hover {
+  background-color: #f0f0f0;
+}
+
 .container-blanc {
   align-items: center;
   display: flex; 
@@ -319,9 +348,6 @@ a:visited {
   /* Espacement entre l'image et le texte */
   padding: 0 10px 0 0;
 }
-
-
-
 nav {
   position: fixed;
   z-index: 999;
@@ -361,19 +387,6 @@ nav li:hover {
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
-.lang-switcher {
-  position: fixed;
-  top: 3px;
-  right: 5px;
-  margin-bottom: 10px;
-  z-index: 10000;
-}
-
-.lang-switcher button {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
 /* Style d'une image spécifique avec un dégradé */
 .logo {
   position: relative;
@@ -407,10 +420,6 @@ nav li:hover {
   border-radius: 5%px;
 
 }
-
-
-
-
 .container-noir {
   width: 100%;
   padding-bottom: calc(7vh + 7vw);
@@ -418,13 +427,6 @@ nav li:hover {
   height: auto;
   background-color: #131111;
   transition: background-color 0.5s ease;
-}
-
-.lang-switcher select {
-  padding-bottom: 2px;
-  padding-left: 2px;
-  font-size: calc(0.3rem + 1vw);
-
 }
 
 footer {
@@ -451,8 +453,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
-
 
 /* Réseaux sociaux dans le footer */
 footer .social-icons {
