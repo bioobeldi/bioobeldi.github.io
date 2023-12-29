@@ -109,14 +109,10 @@ const translations = {
     "placeholder-message": "مثال: السلام عليكم، ممكن 1 لتر من زيت الأركان ، و 1 كيلو من أملو ، التسليم إلى بني ملال",
   },
 };
-
-function changeLanguage() {
-  const selectedLang = document.getElementById("lang-select").value;
-
+function changeLanguage(selectedLang) {
   for (const key in translations[selectedLang]) {
     const element = document.getElementById(key);
     if (element) {
-      // Vérifier si l'élément est un champ de formulaire avec l'attribut "placeholder"
       if (element.placeholder !== undefined) {
         element.placeholder = translations[selectedLang][key];
       } else {
@@ -125,7 +121,6 @@ function changeLanguage() {
     }
   }
 
-  // Mettre à jour spécifiquement les placeholders du formulaire
   const phoneInput = document.getElementById("phone");
   const emailInput = document.getElementById("email");
   const messageInput = document.getElementById("message");
@@ -136,19 +131,16 @@ function changeLanguage() {
     messageInput.placeholder = translations[selectedLang]["placeholder-message"];
   }
 
-  // Sauvegarder la langue sélectionnée dans le localStorage
   localStorage.setItem("selectedLang", selectedLang);
 }
 
-// Vérifier si la langue a déjà été sélectionnée et la récupérer depuis le localStorage
 const storedLang = localStorage.getItem("selectedLang");
 if (storedLang) {
-  // Sélectionner la langue précédemment choisie dans le sélecteur
   document.getElementById("lang-select").value = storedLang;
 }
 
-// Appel initial pour mettre à jour la langue par défaut
-changeLanguage();
+changeLanguage(storedLang); // Appel initial pour mettre à jour la langue par défaut
+
 
 const navbar = document.getElementById('nav');
 const langselect = document.getElementById('lang-select');
