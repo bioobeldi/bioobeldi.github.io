@@ -38,16 +38,20 @@
 </head>
 
 <body>
-
-    <div class="lang-switcher">
-        <select id="lang-select" onchange="changeLanguage()">
-          <option value="fr" selected>Français</option>
-          <option value="en">English</option>
-          <option value="ar">عربي</option>
-        </select>
+  <!-- choix langues-->
+<div class="lang-switcher">
+  <div class="language-grid" id="language-grid">
+    <div class="language-option" onclick="changeLanguage('ar')">
+      <img src="img/arabic.png" alt="Arabic" />
     </div>
-
-
+    <div class="language-option" onclick="changeLanguage('fr')">
+      <img src="img/french.png" alt="French" />
+    </div>
+    <div class="language-option" onclick="changeLanguage('en')">
+      <img src="img/english.png" alt="English" />
+    </div>
+  </div>
+</div>
     <nav id="nav">
       <div class="logo">
         <a href="index.html"><img src="img/fond.jpg" alt="Logo"></a>
