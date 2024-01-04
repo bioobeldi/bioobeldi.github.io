@@ -10,8 +10,8 @@
       
         gtag('config', 'G-YCNWBCWBWE');
       </script>
-<meta charset="utf-8" />
-<style>
+  <meta charset="utf-8" />
+  <style>
     @media (prefers-color-scheme: light) {
         meta[name="theme-color"] {
             content: #4f692a; /* Remplace par la couleur que tu veux */
@@ -23,13 +23,13 @@
             content: #4f692a; /* Remplace par la couleur que tu veux */
         }
     }
-</style>
-
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <meta name="theme-color" content="#4f692a" />
   <meta name='robots' content='index, follow' />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Huile argan olive de qualité - paiement à la livraison" />
-  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="icon" type="image/png" href="/img/favicone.png">
   <link rel="stylesheet" href="style.css" /> 
 
@@ -39,6 +39,29 @@
     <title lang="ar">منتوجات مضمونة الجودة - الدفع عند التسليم</title>
 
   <link rel="icon" type="image/png" href="/img/favicone.png">
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
  </head>
  
  <body>
@@ -79,7 +102,76 @@
             <div class="h1-wrapper">
                 <h1 id="h1imgbvn">Bienvenue dans notre univers d'excellence</h1>
             </div>
-    <h2 id="pprincipal"> </h2>
+  </section>
+
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/olive oil.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/olive oil 2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/luxury argan.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/olive oil 3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/argan brut.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/argan oil 2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/huiles essentielles.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/beldi products.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/argan composition.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/huiles essentielles 2.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+
+
+  <section class="bvn">
+            <div class="h1-wrapper">
+                <h2 id="pprincipal"> Nous sommes un groupe de producteurs locaux d'huile d'olive et d'argan dans la région d'Aourir près d'Agadir. Nous unissons nos efforts pour promouvoir nos produits locaux et faire connaître leur qualité </h2>
+            </div>
 <div  class="produits-container">  
             <div class="produit" id="prt2">              <!--produit 2-->
               <img class="image-with-changing-lighting" src="/img/oil-olive750x562.jpg" alt="huile d'olive olive oil zit zitoun"/>
@@ -127,9 +219,6 @@
          en une aventure sensorielle et bienfaisante.
                                     
         </p>
-
-
-
 
         <div class="produits-container">                <!--produit 1-->
             <div class="produit" id="prt1">
