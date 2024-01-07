@@ -1,0 +1,10 @@
+# Cache statique pour un an
+/*.jpg
+/*.svg
+/*.png
+/*.webp
+/*.ico
+/*.js
+/*.css
+/*.html
+  Cache-Control: max-age=31536000, public
