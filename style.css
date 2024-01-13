@@ -1,6 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.content {
+  width: 100%;
+}
+
 /* Réinitialisation des styles par défaut */
 body, h1, p, img {
   margin: 0;
@@ -69,7 +78,6 @@ p {
   width: 90%;
   max-width: 850px;
   text-align: center;
-  margin: 0 2.5vw 3vw 2.5vw;
   line-height: calc(1em + 1vw + 1vh);
   font-size: calc(1rem + 1vw);
 }
@@ -150,6 +158,7 @@ p {
   margin-top: calc(30px + 3vw);
   transition: 0.4s ease-in-out;
   width: 100%;
+  object-fit: cover;
 }
 .produit:hover img {
   filter: brightness(50%);
@@ -165,13 +174,13 @@ p {
   background: #628a2b;
   height: 4px;
   bottom: -10px;
-  border-radius: 50%;
-  animation: animLink 1.4s infinite ease-in-out;
+  border-radius: 10%;
+  animation: animLink 1.5s infinite ease-in-out;
 }
 
 @keyframes animLink {
   50% {
-    transform: scaleX(0.2);
+    transform: scaleX(0.1);
   }
   100% {
     transform: scaleX(1);
@@ -283,9 +292,11 @@ li {
 }
 
 li {
-  display: inline-block;
+  display: flex;
   background: #f2eded;
-  padding: 0 0 0 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
   border-radius: 20px;
   /* Ajustez le rayon de bordure pour arrondir les coins */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -300,6 +311,7 @@ a,
 a:visited {
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
 }
 #product-argan-oil {
   color: #eea005;
@@ -374,7 +386,7 @@ nav ul {
 
 
 li a {
-  padding: 2px 15px 2px 15px;
+  padding: 2px 15px;
 }
 
 nav li:hover {
@@ -418,7 +430,7 @@ nav li:hover {
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
   margin: calc(0.5vh + 0.5vw);
-  border-radius: 5%px;
+  border-radius: 5%;
 
 }
 .container-noir {
@@ -588,7 +600,7 @@ footer .newsletter-form {
     transition: 0.4s ease-out;
   }
   nav li {
-    padding: 0 0 0 0;
+    padding: 0;
   }
   nav li:hover {
     background: #628a2b;
@@ -666,7 +678,6 @@ footer .contact-info {
   text-align: center;
   line-height: calc(0.6em + 0.81vw + 0.81vh);
   font-size: calc(0.8rem + 0.8vw);
-
   }
 }
 
